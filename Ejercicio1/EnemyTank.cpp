@@ -22,7 +22,7 @@ Vector2f normalize(Vector2f vector)
 float EnemyTank::calculateAngleTo(Vector2f position)
 {
 	float y = normalize(position - getSprite().getPosition()).y;
-	return /*getSprite().getRotation() +*/ asin(y) * 180 / M_PI;
+	return getSprite().getRotation() + asin(y) * 180 / M_PI;
 }
 
 int EnemyTank::getScore()

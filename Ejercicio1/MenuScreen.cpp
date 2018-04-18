@@ -5,6 +5,7 @@ int MenuScreen::Run(RenderWindow & window)
 	Font guiFont;
 	guiFont.loadFromFile("8-Bit Madness.ttf");
 	Clock clockLoop, clockGame;
+	clockLoop.restart();
 	clockGame.restart();
 	float inputDelay = 0.2;
 	bool canInput = true;
